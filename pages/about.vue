@@ -6,3 +6,10 @@
     </div>
   </div>
 </template>
+
+<!-- This page uses the custom layout -->
+<script setup>
+definePageMeta({
+  layout: 'custom-layout'
+})
+</script>

@@ -6,3 +6,11 @@
     </div>
   </div>
 </template>
+
+<!-- This page does not use any layout -->
+<!-- The layout is set to false, meaning it will not use any layout -->
+<script setup>
+definePageMeta({
+  layout: false
+})
+</script>
