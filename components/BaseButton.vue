@@ -79,6 +79,7 @@ export default {
       description: "Whether button is of block type"
     }
   },
+  emits: ['click'],
   computed: {
     classes() {
       const btnClasses = [
@@ -98,6 +99,7 @@ export default {
   },
   methods: {
     handleClick(evt) {
+      console.log("Button clicked", evt);
       this.$emit("click", evt);
     }
   }
