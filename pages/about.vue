@@ -10,6 +10,7 @@
 <!-- This page uses the custom layout -->
 <script setup>
 definePageMeta({
+  middleware: ['random-redirect'],
   layout: 'custom-layout'
 })
 </script>
