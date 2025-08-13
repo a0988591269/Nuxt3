@@ -24,6 +24,18 @@
           <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
             <NuxtLink to="/ofetch/useFetch">前往 useFetch</NuxtLink>
           </BaseButton>
+          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+            <NuxtLink to="/count/ref">前往 ref</NuxtLink>
+          </BaseButton>
+          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+            <NuxtLink to="/count/useState">前往 useState</NuxtLink>
+          </BaseButton>
+          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+            <NuxtLink to="/count/increment">前往 increment</NuxtLink>
+          </BaseButton>
+          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+            <NuxtLink to="/count/surprise">前往 surprise</NuxtLink>
+          </BaseButton>
         </div>
       </div>
       <template #fallback>
