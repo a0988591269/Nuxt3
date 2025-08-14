@@ -6,36 +6,59 @@
         <Icon class="h-12 w-12 text-yellow-400" name="heroicons:sun" />
         <FirstComponent />
         <div class="my-4 flex space-x-4">
-          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-            <NuxtLink to="/about">前往 About</NuxtLink>
-          </BaseButton>
-          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-            <NuxtLink to="/contact">前往 Contact</NuxtLink>
-          </BaseButton>
-          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-            <NuxtLink to="/counter">前往 Counter</NuxtLink>
-          </BaseButton>
-          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-            <NuxtLink to="/ofetch/fetch">前往 fetch</NuxtLink>
-          </BaseButton>
-          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-            <NuxtLink to="/ofetch/useAsyncData">前往 useAsyncData</NuxtLink>
-          </BaseButton>
-          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-            <NuxtLink to="/ofetch/useFetch">前往 useFetch</NuxtLink>
-          </BaseButton>
-          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-            <NuxtLink to="/count/ref">前往 ref</NuxtLink>
-          </BaseButton>
-          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-            <NuxtLink to="/count/useState">前往 useState</NuxtLink>
-          </BaseButton>
-          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-            <NuxtLink to="/count/increment">前往 increment</NuxtLink>
-          </BaseButton>
-          <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-            <NuxtLink to="/count/surprise">前往 surprise</NuxtLink>
-          </BaseButton>
+          <div>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/about">前往 About</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/contact">前往 Contact</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/counter">前往 Counter</NuxtLink>
+            </BaseButton>
+          </div>
+          <div>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/ofetch/fetch">前往 fetch</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/ofetch/useAsyncData">前往 useAsyncData</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/ofetch/useFetch">前往 useFetch</NuxtLink>
+            </BaseButton>
+          </div>
+          <div>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/count/ref">前往 ref</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/count/useState">前往 useState</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/count/increment">前往 increment</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/count/surprise">前往 surprise</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/count/ref">前往 ref</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/count/useState">前往 useState</NuxtLink>
+            </BaseButton>
+          </div>
+          <div>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/counter/increment">前往 increment</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/counter/surprise">前往 surprise</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/locale">前往 locale</NuxtLink>
+            </BaseButton>
+          </div>
         </div>
       </div>
       <template #fallback>
