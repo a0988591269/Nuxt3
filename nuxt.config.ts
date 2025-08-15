@@ -20,7 +20,8 @@ export default defineNuxtConfig({
       // 'composables/*/index.{ts,js,mjs,mts}',
       // 掃描整個 composables 目錄下的檔案
       'composables/**',
-      'plugins/**'
+      'plugins/**',
+      'stores',
     ]
   },
   devtools: { enabled: true },
@@ -43,6 +44,7 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui',
     'nuxt-icons',
-    '@pinia/nuxt'
+    '@pinia/nuxt',  // required
+    'pinia-plugin-persistedstate/nuxt'
   ]
 })

@@ -59,6 +59,14 @@
               <NuxtLink to="/locale">前往 locale</NuxtLink>
             </BaseButton>
           </div>
+          <div>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/pinia/counter">前往 pinia/counter</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/pinia/show">前往 pinia/show</NuxtLink>
+            </BaseButton>
+          </div>
         </div>
       </div>
       <template #fallback>
