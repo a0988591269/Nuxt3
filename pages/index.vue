@@ -67,7 +67,23 @@
               <NuxtLink to="/pinia/show">前往 pinia/show</NuxtLink>
             </BaseButton>
           </div>
+          <div>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/config">前往 config</NuxtLink>
+            </BaseButton>
+            <p class="mt-4 text-2xl text-gray-600">theme.darkMode:</p>
+            <span class="mt-4 text-3xl font-semibold text-blue-500">{{ theme.darkMode }}</span>
+          </div>
         </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <GoogleLogin :callback="callback" popup-type="TOKEN" prompt>
+          <button
+            class="flex rounded-md border border-gray-100 bg-white px-4 py-2 text-sm font-medium shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+          >
+            <span class="text-slate-500 group-hover:text-slate-600">使用 Google 進行登入</span>
+          </button>
+        </GoogleLogin>
       </div>
       <template #fallback>
         <p class="my-6 flex justify-center">Loading...</p>
@@ -112,6 +128,9 @@ const show = ref(false)
 const scrollToElement = () => {
   useNuxtApp().$scrollTo('#element')
 }
+
+const appConfig = useAppConfig()
+const { theme } = appConfig
 
 definePageMeta({
   middleware: defineNuxtRouteMiddleware(() => {

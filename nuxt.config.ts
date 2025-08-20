@@ -46,5 +46,13 @@ export default defineNuxtConfig({
     'nuxt-icons',
     '@pinia/nuxt',  // required
     'pinia-plugin-persistedstate/nuxt'
-  ]
+  ],
+  runtimeConfig: {
+    apiSecret: '這邊放上你的 Api Secret', // 會被 NUXT_API_SECRET 環境變數覆蓋 (.env 檔案或環境變數)
+    googleClientSecret: '這邊放上你的 Google Client Secret',
+    public: {
+      apiBase: '/api', // 會被 NUXT_PUBLIC_API_BASE 環境變數覆蓋 (.env 檔案或環境變數)
+      googleClientId: '這邊放上你的 Google Client ID'
+    }
+  }
 })
