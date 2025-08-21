@@ -30,6 +30,7 @@
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.3",
+    "google-auth-library": "^10.2.1",
     "nuxt-icons": "^3.2.1",
     "pinia": "^3.0.3",
     "pinia-plugin-persistedstate": "^4.5.0",

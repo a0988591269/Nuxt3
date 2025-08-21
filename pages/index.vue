@@ -74,6 +74,17 @@
             <p class="mt-4 text-2xl text-gray-600">theme.darkMode:</p>
             <span class="mt-4 text-3xl font-semibold text-blue-500">{{ theme.darkMode }}</span>
           </div>
+          <div>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/login/googleCredential">前往 googleCredential</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/login/googleAuthToken">前往 googleAuthToken</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/login/googleAuthCode">前往 googleAuthCode</NuxtLink>
+            </BaseButton>
+          </div>
         </div>
       </div>
       <div class="flex flex-col items-center">
@@ -84,6 +95,7 @@
             <span class="text-slate-500 group-hover:text-slate-600">使用 Google 進行登入</span>
           </button>
         </GoogleLogin>
+        <!-- <GoogleLogin :callback="callback" /> -->
       </div>
       <template #fallback>
         <p class="my-6 flex justify-center">Loading...</p>
@@ -131,6 +143,10 @@ const scrollToElement = () => {
 
 const appConfig = useAppConfig()
 const { theme } = appConfig
+
+const callback = (response) => {
+  console.log(response)
+}
 
 definePageMeta({
   middleware: defineNuxtRouteMiddleware(() => {
