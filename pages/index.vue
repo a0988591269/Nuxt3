@@ -85,6 +85,11 @@
               <NuxtLink to="/login/googleAuthCode">前往 googleAuthCode</NuxtLink>
             </BaseButton>
           </div>
+          <div>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/cookies">前往 Cookie</NuxtLink>
+            </BaseButton>
+          </div>
         </div>
       </div>
       <div class="flex flex-col items-center">
