@@ -87,7 +87,13 @@
           </div>
           <div>
             <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
-              <NuxtLink to="/cookies">前往 Cookie</NuxtLink>
+              <NuxtLink to="/cookies">前往 cookies</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/login">前往 login</NuxtLink>
+            </BaseButton>
+            <BaseButton tag="a" class="mb-3 mb-sm-0" type="info" icon="fa fa-code">
+              <NuxtLink to="/login/whoami">前往 whoami</NuxtLink>
             </BaseButton>
           </div>
         </div>
