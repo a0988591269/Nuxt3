@@ -20,7 +20,9 @@
 
 <script setup>
 const { data: userInfo, error } = await useFetch('/api/whoami', {
-  headers: useRequestHeaders(['cookie'])
+    // ['cookie'] 代表只帶入 cookie，避免把不必要的 headers 傳給後端
+    // useRequestHeaders 會自動帶入 request 的 headers，這樣就可以把 cookie 傳給後端
+    headers: useRequestHeaders(['cookie'])
 })
 console.log(userInfo)
 </script>
